@@ -1,0 +1,1821 @@
+{
+  "id": "0",
+  "name": "Diagram 1",
+  "createdAt": "2025-07-15T15:18:23.283Z",
+  "updatedAt": "2025-07-15T15:18:23.283Z",
+  "databaseType": "generic",
+  "tables": [
+    {
+      "id": "1",
+      "name": "Warehouse",
+      "x": 230,
+      "y": -305,
+      "fields": [
+        {
+          "id": "2",
+          "name": "ID_Warehouse",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": true,
+          "nullable": false,
+          "primaryKey": true,
+          "createdAt": 1752586269914
+        },
+        {
+          "id": "3",
+          "name": "Address",
+          "type": {
+            "name": "varchar",
+            "id": "varchar"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1752586281122
+        },
+        {
+          "id": "4",
+          "name": "Phone",
+          "type": {
+            "name": "varchar",
+            "id": "varchar"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1752586306189
+        }
+      ],
+      "indexes": [],
+      "color": "#8a61f5",
+      "createdAt": 1752586269914,
+      "isView": false,
+      "order": 0
+    },
+    {
+      "id": "5",
+      "name": "Chemistry_Warehouse",
+      "x": 570.5437610555055,
+      "y": -245.05377849835892,
+      "fields": [
+        {
+          "id": "6",
+          "name": "ID_Chemistry_Warehouse",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": true,
+          "nullable": false,
+          "primaryKey": true,
+          "createdAt": 1752586878225
+        },
+        {
+          "id": "7",
+          "name": "ID_Warehouse_(FK)",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1752586900665
+        },
+        {
+          "id": "8",
+          "name": "ID_Chemistry_(FK)",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1752586922977
+        }
+      ],
+      "indexes": [],
+      "color": "#8a61f5",
+      "createdAt": 1752586878225,
+      "isView": false,
+      "order": 1,
+      "width": 253
+    },
+    {
+      "id": "9",
+      "name": "Shop",
+      "x": 204.9074354318488,
+      "y": -94.33199799906576,
+      "fields": [
+        {
+          "id": "10",
+          "name": "ID_Shop",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": true,
+          "nullable": false,
+          "primaryKey": true,
+          "createdAt": 1752587390806
+        },
+        {
+          "id": "11",
+          "name": "Phone",
+          "type": {
+            "name": "varchar",
+            "id": "varchar"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1752587414008
+        },
+        {
+          "id": "12",
+          "name": "Address",
+          "type": {
+            "name": "varchar",
+            "id": "varchar"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1752587426001
+        }
+      ],
+      "indexes": [],
+      "color": "#8a61f5",
+      "createdAt": 1752587390806,
+      "isView": false,
+      "order": 2
+    },
+    {
+      "id": "13",
+      "name": "Chemistry_Shop",
+      "x": 543.595517032239,
+      "y": -48.79615745620468,
+      "fields": [
+        {
+          "id": "14",
+          "name": "ID_Cmemistry_Shop",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": true,
+          "nullable": false,
+          "primaryKey": true,
+          "createdAt": 1752587684938
+        },
+        {
+          "id": "15",
+          "name": "ID_Shop_(FK)",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1752587698694
+        },
+        {
+          "id": "16",
+          "name": "ID_Chemistry_(FK)",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1752587715506
+        }
+      ],
+      "indexes": [],
+      "color": "#7175fa",
+      "createdAt": 1752587684938,
+      "isView": false,
+      "order": 3
+    },
+    {
+      "id": "17",
+      "name": "Supplier",
+      "x": 469.5080673288247,
+      "y": 125.15531451234418,
+      "fields": [
+        {
+          "id": "18",
+          "name": "ID_Supplier",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": true,
+          "nullable": false,
+          "primaryKey": true,
+          "createdAt": 1752588478300
+        },
+        {
+          "id": "19",
+          "name": "Organization_title",
+          "type": {
+            "name": "varchar",
+            "id": "varchar"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1752588506241
+        },
+        {
+          "id": "20",
+          "name": "Phone",
+          "type": {
+            "name": "varchar",
+            "id": "varchar"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1752588522727
+        },
+        {
+          "id": "21",
+          "name": "Address",
+          "type": {
+            "name": "varchar",
+            "id": "varchar"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1752588529285
+        }
+      ],
+      "indexes": [],
+      "color": "#7175fa",
+      "createdAt": 1752588478300,
+      "isView": false,
+      "order": 4
+    },
+    {
+      "id": "22",
+      "name": "Document",
+      "x": 118.2588988734077,
+      "y": 319.0841235250822,
+      "fields": [
+        {
+          "id": "23",
+          "name": "ID_Document",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": true,
+          "nullable": false,
+          "primaryKey": true,
+          "createdAt": 1752588630729
+        },
+        {
+          "id": "24",
+          "name": "ID_Employee_(FK)",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1752588645519
+        },
+        {
+          "id": "25",
+          "name": "Creation_date",
+          "type": {
+            "name": "date",
+            "id": "date"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1752588657758
+        },
+        {
+          "id": "26",
+          "name": "Link",
+          "type": {
+            "name": "varchar",
+            "id": "varchar"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1752588663063
+        }
+      ],
+      "indexes": [],
+      "color": "#7175fa",
+      "createdAt": 1752588630729,
+      "isView": false,
+      "order": 5
+    },
+    {
+      "id": "27",
+      "name": "Document_Ordering",
+      "x": 452.1197190187132,
+      "y": 340.77989874005266,
+      "fields": [
+        {
+          "id": "28",
+          "name": "ID_Document_Order",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": true,
+          "nullable": false,
+          "primaryKey": true,
+          "createdAt": 1752588945751
+        },
+        {
+          "id": "29",
+          "name": "ID_Document_(FK)",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1752588959717
+        },
+        {
+          "id": "30",
+          "name": "ID_Ordering_(FK)",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1752588966937
+        }
+      ],
+      "indexes": [],
+      "color": "#7175fa",
+      "createdAt": 1752588945751,
+      "isView": false,
+      "order": 6
+    },
+    {
+      "id": "31",
+      "name": "Employee",
+      "x": 425.9805391640185,
+      "y": 567.7443032464216,
+      "fields": [
+        {
+          "id": "32",
+          "name": "ID_Employee",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": true,
+          "nullable": false,
+          "primaryKey": true,
+          "createdAt": 1752589093156
+        },
+        {
+          "id": "33",
+          "name": "ID_Position_(FK)",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1752589113844
+        },
+        {
+          "id": "34",
+          "name": "Name",
+          "type": {
+            "name": "varchar",
+            "id": "varchar"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1752589120568
+        },
+        {
+          "id": "35",
+          "name": "Surname",
+          "type": {
+            "name": "varchar",
+            "id": "varchar"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1752589127282
+        },
+        {
+          "id": "36",
+          "name": "Fathers_name",
+          "type": {
+            "name": "varchar",
+            "id": "varchar"
+          },
+          "unique": false,
+          "nullable": true,
+          "primaryKey": false,
+          "createdAt": 1752589133444
+        },
+        {
+          "id": "37",
+          "name": "Phone",
+          "type": {
+            "name": "varchar",
+            "id": "varchar"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1752589142781
+        },
+        {
+          "id": "38",
+          "name": "Registration_address",
+          "type": {
+            "name": "varchar",
+            "id": "varchar"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1752589152887
+        },
+        {
+          "id": "39",
+          "name": "Employment_date",
+          "type": {
+            "name": "date",
+            "id": "date"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1752589161420
+        },
+        {
+          "id": "40",
+          "name": "Contract_due_date",
+          "type": {
+            "name": "date",
+            "id": "date"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1752589172563
+        }
+      ],
+      "indexes": [],
+      "color": "#7175fa",
+      "createdAt": 1752589093156,
+      "isView": false,
+      "order": 7
+    },
+    {
+      "id": "41",
+      "name": "Message",
+      "x": 103.45953929737362,
+      "y": 603.4368763415629,
+      "fields": [
+        {
+          "id": "42",
+          "name": "ID_Message",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": true,
+          "nullable": false,
+          "primaryKey": true,
+          "createdAt": 1752589395127
+        },
+        {
+          "id": "43",
+          "name": "ID_Support_chat_(FK)",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1752589410027
+        },
+        {
+          "id": "44",
+          "name": "Contents",
+          "type": {
+            "name": "text",
+            "id": "text"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1752589429422
+        },
+        {
+          "id": "45",
+          "name": "Send_time",
+          "type": {
+            "name": "time",
+            "id": "time"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1752589441270
+        },
+        {
+          "id": "46",
+          "name": "Sender_type",
+          "type": {
+            "name": "varchar",
+            "id": "varchar"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1752589450368
+        }
+      ],
+      "indexes": [],
+      "color": "#7175fa",
+      "createdAt": 1752589395127,
+      "isView": false,
+      "order": 8
+    },
+    {
+      "id": "47",
+      "name": "Support_chat",
+      "x": 95.53393240446502,
+      "y": 1016.6311125258701,
+      "fields": [
+        {
+          "id": "48",
+          "name": "ID_Support_chat",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": true,
+          "nullable": false,
+          "primaryKey": true,
+          "createdAt": 1752589564941
+        },
+        {
+          "id": "49",
+          "name": "ID_Employee_(FK)",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1752589591273
+        },
+        {
+          "id": "50",
+          "name": "ID_Client_(FK)",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1752589597690
+        },
+        {
+          "id": "51",
+          "name": "Status",
+          "type": {
+            "name": "varchar",
+            "id": "varchar"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1752589608523
+        }
+      ],
+      "indexes": [],
+      "color": "#7175fa",
+      "createdAt": 1752589564941,
+      "isView": false,
+      "order": 9
+    },
+    {
+      "id": "52",
+      "name": "Position",
+      "x": 482.5889887340775,
+      "y": 949.5533932404464,
+      "fields": [
+        {
+          "id": "53",
+          "name": "ID_Position",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": true,
+          "nullable": false,
+          "primaryKey": true,
+          "createdAt": 1752589718716
+        },
+        {
+          "id": "54",
+          "name": "Title",
+          "type": {
+            "name": "varchar",
+            "id": "varchar"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1752589736158
+        },
+        {
+          "id": "55",
+          "name": "Salary",
+          "type": {
+            "name": "decimal",
+            "id": "decimal"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1752589741755
+        },
+        {
+          "id": "56",
+          "name": "Access_category",
+          "type": {
+            "name": "varchar",
+            "id": "varchar"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1752589748331
+        }
+      ],
+      "indexes": [],
+      "color": "#7175fa",
+      "createdAt": 1752589718716,
+      "isView": false,
+      "order": 10
+    },
+    {
+      "id": "57",
+      "name": "Employee_Ordering",
+      "x": 702.5343045799724,
+      "y": 773.0489002069585,
+      "fields": [
+        {
+          "id": "58",
+          "name": "ID_Employee_Order",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": true,
+          "nullable": false,
+          "primaryKey": true,
+          "createdAt": 1752589889781
+        },
+        {
+          "id": "59",
+          "name": "ID_Employee_(FK)",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1752589911473
+        },
+        {
+          "id": "60",
+          "name": "ID_Ordering_(FK)",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1752589924128
+        }
+      ],
+      "indexes": [],
+      "color": "#7175fa",
+      "createdAt": 1752589889781,
+      "isView": false,
+      "order": 11
+    },
+    {
+      "id": "61",
+      "name": "Category_of_Chemistry",
+      "x": 943.414213385752,
+      "y": -287.4676786181103,
+      "fields": [
+        {
+          "id": "62",
+          "name": "ID_Category",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": true,
+          "nullable": false,
+          "primaryKey": true,
+          "createdAt": 1752590064086
+        },
+        {
+          "id": "63",
+          "name": "Description",
+          "type": {
+            "name": "text",
+            "id": "text"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1752590084355
+        }
+      ],
+      "indexes": [],
+      "color": "#7175fa",
+      "createdAt": 1752590064086,
+      "isView": false,
+      "order": 12
+    },
+    {
+      "id": "64",
+      "name": "Chemistry_Category",
+      "x": 945.1553145123444,
+      "y": -168.77349450039378,
+      "fields": [
+        {
+          "id": "65",
+          "name": "ID_Chemistry_Category",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": true,
+          "nullable": false,
+          "primaryKey": true,
+          "createdAt": 1752590250614
+        },
+        {
+          "id": "66",
+          "name": "ID_Category_of_Chemistry_(FK)",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1752590269107
+        },
+        {
+          "id": "67",
+          "name": "ID_Chemistry_(FK)",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1752590276305
+        }
+      ],
+      "indexes": [],
+      "color": "#7175fa",
+      "createdAt": 1752590250614,
+      "isView": false,
+      "order": 13
+    },
+    {
+      "id": "68",
+      "name": "Chemistry",
+      "x": 947.0323933738014,
+      "y": 14.799359576034135,
+      "fields": [
+        {
+          "id": "69",
+          "name": "ID_Chemistry",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": true,
+          "nullable": false,
+          "primaryKey": true,
+          "createdAt": 1752590391877
+        },
+        {
+          "id": "70",
+          "name": "Title",
+          "type": {
+            "name": "varchar",
+            "id": "varchar"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1752590412790
+        },
+        {
+          "id": "71",
+          "name": "ID_Supplier_(FK)",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1752590422292
+        },
+        {
+          "id": "72",
+          "name": "Description",
+          "type": {
+            "name": "text",
+            "id": "text"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1752590433258
+        },
+        {
+          "id": "73",
+          "name": "Instructions",
+          "type": {
+            "name": "text",
+            "id": "text"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1752590441622
+        },
+        {
+          "id": "74",
+          "name": "Expiration_date",
+          "type": {
+            "name": "date",
+            "id": "date"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1752590458883
+        },
+        {
+          "id": "75",
+          "name": "Sertificate",
+          "type": {
+            "name": "varchar",
+            "id": "varchar"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1752590465633
+        },
+        {
+          "id": "76",
+          "name": "Price",
+          "type": {
+            "name": "decimal",
+            "id": "decimal"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1752590475323
+        }
+      ],
+      "indexes": [],
+      "color": "#7175fa",
+      "createdAt": 1752590391877,
+      "isView": false,
+      "order": 14
+    },
+    {
+      "id": "77",
+      "name": "Chemistry_Ordering",
+      "x": 953.0809214052524,
+      "y": 335.57925831608685,
+      "fields": [
+        {
+          "id": "78",
+          "name": "ID_Chemistry_Order",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": true,
+          "nullable": false,
+          "primaryKey": true,
+          "createdAt": 1752590716689
+        },
+        {
+          "id": "79",
+          "name": "ID_Chemistry_(FK)",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1752590734837
+        },
+        {
+          "id": "80",
+          "name": "ID_Ordering_(FK)",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1752590743476
+        }
+      ],
+      "indexes": [],
+      "color": "#7175fa",
+      "createdAt": 1752590716689,
+      "isView": false,
+      "order": 15
+    },
+    {
+      "id": "81",
+      "name": "Ordering",
+      "x": 1000,
+      "y": 540,
+      "fields": [
+        {
+          "id": "82",
+          "name": "ID_Ordering",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": true,
+          "nullable": false,
+          "primaryKey": true,
+          "createdAt": 1752590882711
+        },
+        {
+          "id": "83",
+          "name": "ID_Employee_(FK)",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1752590903538
+        },
+        {
+          "id": "84",
+          "name": "ID_Address_(FK)",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1752590914334
+        },
+        {
+          "id": "85",
+          "name": "ID_Discount_card_(FK)",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1752590922590
+        },
+        {
+          "id": "86",
+          "name": "ID_Client_(FK)",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1752590930409
+        },
+        {
+          "id": "87",
+          "name": "Total",
+          "type": {
+            "name": "decimal",
+            "id": "decimal"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1752590937882
+        },
+        {
+          "id": "88",
+          "name": "Ordering_date",
+          "type": {
+            "name": "date",
+            "id": "date"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1752590947112
+        },
+        {
+          "id": "89",
+          "name": "Status",
+          "type": {
+            "name": "varchar",
+            "id": "varchar"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1752590957815
+        },
+        {
+          "id": "90",
+          "name": "Delivery_method",
+          "type": {
+            "name": "varchar",
+            "id": "varchar"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1752590968437
+        }
+      ],
+      "indexes": [],
+      "color": "#7175fa",
+      "createdAt": 1752590882711,
+      "isView": false,
+      "order": 16
+    },
+    {
+      "id": "91",
+      "name": "Review",
+      "x": 1297.3656853543007,
+      "y": -158.19091000597518,
+      "fields": [
+        {
+          "id": "92",
+          "name": "ID_Review",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": true,
+          "nullable": false,
+          "primaryKey": true,
+          "createdAt": 1752591112057
+        },
+        {
+          "id": "93",
+          "name": "ID_Client_(FK)",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1752591143783
+        },
+        {
+          "id": "94",
+          "name": "ID_Chemistry_(FK)",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1752591170741
+        },
+        {
+          "id": "95",
+          "name": "Contents",
+          "type": {
+            "name": "text",
+            "id": "text"
+          },
+          "unique": false,
+          "nullable": true,
+          "primaryKey": false,
+          "createdAt": 1752591181043
+        },
+        {
+          "id": "96",
+          "name": "Rating",
+          "type": {
+            "name": "smallint",
+            "id": "smallint"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1752591186759
+        }
+      ],
+      "indexes": [],
+      "color": "#7175fa",
+      "createdAt": 1752591112057,
+      "isView": false,
+      "order": 17
+    },
+    {
+      "id": "97",
+      "name": "Transaction",
+      "x": 1295.5565953602754,
+      "y": 289.7120339311225,
+      "fields": [
+        {
+          "id": "98",
+          "name": "ID_Transaction",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": true,
+          "nullable": false,
+          "primaryKey": true,
+          "createdAt": 1752591315423
+        },
+        {
+          "id": "99",
+          "name": "ID_Ordering_(FK)",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1752591333210
+        },
+        {
+          "id": "100",
+          "name": "Order_date",
+          "type": {
+            "name": "date",
+            "id": "date"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1752591343135
+        }
+      ],
+      "indexes": [],
+      "color": "#7175fa",
+      "createdAt": 1752591315423,
+      "isView": false,
+      "order": 18
+    },
+    {
+      "id": "101",
+      "name": "Address",
+      "x": 1306.8280262976093,
+      "y": 474.83058196011615,
+      "fields": [
+        {
+          "id": "102",
+          "name": "ID_Address",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": true,
+          "nullable": false,
+          "primaryKey": true,
+          "createdAt": 1752591395200
+        },
+        {
+          "id": "103",
+          "name": "ID_Client_(FK)",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1752591417000
+        },
+        {
+          "id": "104",
+          "name": "Delivery_address",
+          "type": {
+            "name": "varchar",
+            "id": "varchar"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1752591431685
+        }
+      ],
+      "indexes": [],
+      "color": "#7175fa",
+      "createdAt": 1752591395200,
+      "isView": false,
+      "order": 19
+    },
+    {
+      "id": "105",
+      "name": "Discount_card",
+      "x": 1289.6616058363657,
+      "y": 651.6784776426914,
+      "fields": [
+        {
+          "id": "106",
+          "name": "ID_Discount_card",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": true,
+          "nullable": false,
+          "primaryKey": true,
+          "createdAt": 1752591802129
+        },
+        {
+          "id": "107",
+          "name": "ID_Discount_level_(FK)",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": false,
+          "nullable": true,
+          "primaryKey": false,
+          "createdAt": 1752591819325
+        },
+        {
+          "id": "108",
+          "name": "ID_Client_(FK)",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": false,
+          "nullable": true,
+          "primaryKey": false,
+          "createdAt": 1752591825804
+        }
+      ],
+      "indexes": [],
+      "color": "#7175fa",
+      "createdAt": 1752591802129,
+      "isView": false,
+      "order": 20
+    },
+    {
+      "id": "109",
+      "name": "Discount_level",
+      "x": 1299.2399284929404,
+      "y": 817.4212457963026,
+      "fields": [
+        {
+          "id": "110",
+          "name": "ID_Discount_level",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": true,
+          "nullable": false,
+          "primaryKey": true,
+          "createdAt": 1752591994047
+        },
+        {
+          "id": "111",
+          "name": "Title",
+          "type": {
+            "name": "varchar",
+            "id": "varchar"
+          },
+          "unique": false,
+          "nullable": true,
+          "primaryKey": false,
+          "createdAt": 1752592025383
+        },
+        {
+          "id": "112",
+          "name": "Discount",
+          "type": {
+            "name": "int",
+            "id": "int"
+          },
+          "unique": false,
+          "nullable": true,
+          "primaryKey": false,
+          "createdAt": 1752592032074
+        }
+      ],
+      "indexes": [],
+      "color": "#7175fa",
+      "createdAt": 1752591994047,
+      "isView": false,
+      "order": 21
+    },
+    {
+      "id": "113",
+      "name": "Client",
+      "x": 1283.3235615625085,
+      "y": 987.7669662022324,
+      "fields": [
+        {
+          "id": "114",
+          "name": "ID_Client",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": true,
+          "nullable": false,
+          "primaryKey": true,
+          "createdAt": 1752592188601
+        },
+        {
+          "id": "115",
+          "name": "Surname",
+          "type": {
+            "name": "varchar",
+            "id": "varchar"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1752592215162
+        },
+        {
+          "id": "116",
+          "name": "Name",
+          "type": {
+            "name": "varchar",
+            "id": "varchar"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1752592221775
+        },
+        {
+          "id": "117",
+          "name": "Fathers_name",
+          "type": {
+            "name": "varchar",
+            "id": "varchar"
+          },
+          "unique": false,
+          "nullable": true,
+          "primaryKey": false,
+          "createdAt": 1752592227876
+        },
+        {
+          "id": "118",
+          "name": "Phone",
+          "type": {
+            "name": "varchar",
+            "id": "varchar"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1752592235497
+        }
+      ],
+      "indexes": [],
+      "color": "#7175fa",
+      "createdAt": 1752592188601,
+      "isView": false,
+      "order": 22
+    },
+    {
+      "id": "119",
+      "name": "Access_data",
+      "x": 958.2362359175968,
+      "y": 1112.1423819745241,
+      "fields": [
+        {
+          "id": "120",
+          "name": "ID_Access_data",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": true,
+          "nullable": false,
+          "primaryKey": true,
+          "createdAt": 1752592448828
+        },
+        {
+          "id": "121",
+          "name": "ID_Client_(FK)",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1752592469964
+        },
+        {
+          "id": "122",
+          "name": "Login",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1752592475346
+        },
+        {
+          "id": "123",
+          "name": "Password",
+          "type": {
+            "id": "bigint",
+            "name": "bigint"
+          },
+          "unique": false,
+          "nullable": false,
+          "primaryKey": false,
+          "createdAt": 1752592480642
+        }
+      ],
+      "indexes": [],
+      "color": "#7175fa",
+      "createdAt": 1752592448828,
+      "isView": false,
+      "order": 23
+    }
+  ],
+  "relationships": [
+    {
+      "id": "124",
+      "name": "Warehouse_ID_Warehouse_fk",
+      "sourceTableId": "1",
+      "targetTableId": "5",
+      "sourceFieldId": "2",
+      "targetFieldId": "7",
+      "sourceCardinality": "one",
+      "targetCardinality": "many",
+      "createdAt": 1752587019124
+    },
+    {
+      "id": "125",
+      "name": "Shop_ID_Shop_fk",
+      "sourceTableId": "9",
+      "targetTableId": "13",
+      "sourceFieldId": "10",
+      "targetFieldId": "15",
+      "sourceCardinality": "one",
+      "targetCardinality": "many",
+      "createdAt": 1752587755515
+    },
+    {
+      "id": "126",
+      "name": "Document_ID_Document_fk",
+      "sourceTableId": "22",
+      "targetTableId": "27",
+      "sourceFieldId": "23",
+      "targetFieldId": "29",
+      "sourceCardinality": "one",
+      "targetCardinality": "many",
+      "createdAt": 1752588990085
+    },
+    {
+      "id": "127",
+      "name": "Document_ID_Employee_(FK)_fk",
+      "sourceTableId": "22",
+      "targetTableId": "31",
+      "sourceFieldId": "24",
+      "targetFieldId": "32",
+      "sourceCardinality": "many",
+      "targetCardinality": "one",
+      "createdAt": 1752589319978
+    },
+    {
+      "id": "128",
+      "name": "Message_ID_Support_chat_(FK)_fk",
+      "sourceTableId": "41",
+      "targetTableId": "47",
+      "sourceFieldId": "43",
+      "targetFieldId": "48",
+      "sourceCardinality": "many",
+      "targetCardinality": "one",
+      "createdAt": 1752589633981
+    },
+    {
+      "id": "129",
+      "name": "Employee_ID_Employee_fk",
+      "sourceTableId": "31",
+      "targetTableId": "47",
+      "sourceFieldId": "32",
+      "targetFieldId": "49",
+      "sourceCardinality": "one",
+      "targetCardinality": "many",
+      "createdAt": 1752589665713
+    },
+    {
+      "id": "130",
+      "name": "Employee_ID_Position_(FK)_fk",
+      "sourceTableId": "31",
+      "targetTableId": "52",
+      "sourceFieldId": "33",
+      "targetFieldId": "53",
+      "sourceCardinality": "many",
+      "targetCardinality": "one",
+      "createdAt": 1752589783074
+    },
+    {
+      "id": "131",
+      "name": "Employee_ID_Employee_fk",
+      "sourceTableId": "31",
+      "targetTableId": "57",
+      "sourceFieldId": "32",
+      "targetFieldId": "59",
+      "sourceCardinality": "one",
+      "targetCardinality": "many",
+      "createdAt": 1752589951269
+    },
+    {
+      "id": "132",
+      "name": "Category_of_Chemistry_ID_Category_fk",
+      "sourceTableId": "61",
+      "targetTableId": "64",
+      "sourceFieldId": "62",
+      "targetFieldId": "66",
+      "sourceCardinality": "one",
+      "targetCardinality": "many",
+      "createdAt": 1752590294774
+    },
+    {
+      "id": "133",
+      "name": "Chemistry_Category_ID_Chemistry_(FK)_fk",
+      "sourceTableId": "64",
+      "targetTableId": "68",
+      "sourceFieldId": "67",
+      "targetFieldId": "69",
+      "sourceCardinality": "many",
+      "targetCardinality": "one",
+      "createdAt": 1752590542638
+    },
+    {
+      "id": "134",
+      "name": "Chemistry_Warehouse_ID_Chemistry_(FK)_fk",
+      "sourceTableId": "5",
+      "targetTableId": "68",
+      "sourceFieldId": "8",
+      "targetFieldId": "69",
+      "sourceCardinality": "many",
+      "targetCardinality": "one",
+      "createdAt": 1752590580670
+    },
+    {
+      "id": "135",
+      "name": "Chemistry_Shop_ID_Chemistry_(FK)_fk",
+      "sourceTableId": "13",
+      "targetTableId": "68",
+      "sourceFieldId": "16",
+      "targetFieldId": "69",
+      "sourceCardinality": "many",
+      "targetCardinality": "one",
+      "createdAt": 1752590588847
+    },
+    {
+      "id": "136",
+      "name": "Supplier_ID_Supplier_fk",
+      "sourceTableId": "17",
+      "targetTableId": "68",
+      "sourceFieldId": "18",
+      "targetFieldId": "71",
+      "sourceCardinality": "one",
+      "targetCardinality": "many",
+      "createdAt": 1752590624743
+    },
+    {
+      "id": "137",
+      "name": "Chemistry_Ordering_ID_Chemistry_Order_fk",
+      "sourceTableId": "77",
+      "targetTableId": "68",
+      "sourceFieldId": "78",
+      "targetFieldId": "69",
+      "sourceCardinality": "many",
+      "targetCardinality": "one",
+      "createdAt": 1752590789197
+    },
+    {
+      "id": "138",
+      "name": "Employee_Ordering_ID_Ordering_(FK)_fk",
+      "sourceTableId": "57",
+      "targetTableId": "81",
+      "sourceFieldId": "60",
+      "targetFieldId": "82",
+      "sourceCardinality": "many",
+      "targetCardinality": "one",
+      "createdAt": 1752591010221
+    },
+    {
+      "id": "139",
+      "name": "Chemistry_Ordering_ID_Ordering_(FK)_fk",
+      "sourceTableId": "77",
+      "targetTableId": "81",
+      "sourceFieldId": "80",
+      "targetFieldId": "82",
+      "sourceCardinality": "many",
+      "targetCardinality": "one",
+      "createdAt": 1752591024198
+    },
+    {
+      "id": "140",
+      "name": "Document_Ordering_ID_Ordering_(FK)_fk",
+      "sourceTableId": "27",
+      "targetTableId": "81",
+      "sourceFieldId": "30",
+      "targetFieldId": "82",
+      "sourceCardinality": "many",
+      "targetCardinality": "one",
+      "createdAt": 1752591031714
+    },
+    {
+      "id": "141",
+      "name": "Chemistry_ID_Chemistry_fk",
+      "sourceTableId": "68",
+      "targetTableId": "91",
+      "sourceFieldId": "69",
+      "targetFieldId": "94",
+      "sourceCardinality": "one",
+      "targetCardinality": "many",
+      "createdAt": 1752591254008
+    },
+    {
+      "id": "142",
+      "name": "Transaction_ID_Ordering_(FK)_fk",
+      "sourceTableId": "97",
+      "targetTableId": "81",
+      "sourceFieldId": "99",
+      "targetFieldId": "82",
+      "sourceCardinality": "many",
+      "targetCardinality": "one",
+      "createdAt": 1752591732883
+    },
+    {
+      "id": "143",
+      "name": "Ordering_ID_Address_(FK)_fk",
+      "sourceTableId": "81",
+      "targetTableId": "101",
+      "sourceFieldId": "84",
+      "targetFieldId": "102",
+      "sourceCardinality": "many",
+      "targetCardinality": "one",
+      "createdAt": 1752591751945
+    },
+    {
+      "id": "144",
+      "name": "Address_ID_Client_(FK)_fk",
+      "sourceTableId": "101",
+      "targetTableId": "105",
+      "sourceFieldId": "103",
+      "targetFieldId": "108",
+      "sourceCardinality": "many",
+      "targetCardinality": "one",
+      "createdAt": 1752591857023
+    },
+    {
+      "id": "145",
+      "name": "Discount_card_ID_Discount_card_fk",
+      "sourceTableId": "105",
+      "targetTableId": "81",
+      "sourceFieldId": "106",
+      "targetFieldId": "85",
+      "sourceCardinality": "one",
+      "targetCardinality": "many",
+      "createdAt": 1752591943171
+    },
+    {
+      "id": "146",
+      "name": "Discount_card_ID_Discount_level_(FK)_fk",
+      "sourceTableId": "105",
+      "targetTableId": "109",
+      "sourceFieldId": "107",
+      "targetFieldId": "110",
+      "sourceCardinality": "many",
+      "targetCardinality": "one",
+      "createdAt": 1752592063526
+    },
+    {
+      "id": "147",
+      "name": "Ordering_ID_Client_(FK)_fk",
+      "sourceTableId": "81",
+      "targetTableId": "113",
+      "sourceFieldId": "86",
+      "targetFieldId": "114",
+      "sourceCardinality": "many",
+      "targetCardinality": "one",
+      "createdAt": 1752592274770
+    },
+    {
+      "id": "148",
+      "name": "Support_chat_ID_Client_(FK)_fk",
+      "sourceTableId": "47",
+      "targetTableId": "113",
+      "sourceFieldId": "50",
+      "targetFieldId": "114",
+      "sourceCardinality": "many",
+      "targetCardinality": "one",
+      "createdAt": 1752592305492
+    },
+    {
+      "id": "149",
+      "name": "Address_ID_Client_(FK)_fk",
+      "sourceTableId": "101",
+      "targetTableId": "113",
+      "sourceFieldId": "103",
+      "targetFieldId": "114",
+      "sourceCardinality": "many",
+      "targetCardinality": "one",
+      "createdAt": 1752592342008
+    },
+    {
+      "id": "150",
+      "name": "Review_ID_Client_(FK)_fk",
+      "sourceTableId": "91",
+      "targetTableId": "113",
+      "sourceFieldId": "93",
+      "targetFieldId": "114",
+      "sourceCardinality": "many",
+      "targetCardinality": "one",
+      "createdAt": 1752592390027
+    },
+    {
+      "id": "151",
+      "name": "Access_data_ID_Client_(FK)_fk",
+      "sourceTableId": "119",
+      "targetTableId": "113",
+      "sourceFieldId": "121",
+      "targetFieldId": "114",
+      "sourceCardinality": "one",
+      "targetCardinality": "one",
+      "createdAt": 1752592526427
+    }
+  ],
+  "dependencies": []
+}
